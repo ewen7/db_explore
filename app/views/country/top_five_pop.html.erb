@@ -1,0 +1,8 @@
+<h1>States with the Top Five Population</h1>
+<ol>
+	<% @states.each do |state| %>
+	<li>
+		<b> Name: </b> <%= state.name %> <b> Capital: </b> <%= state.capital %>
+	</li>
+	<% end %>
+</ol>

@@ -1,0 +1,9 @@
+<h1> All States </h1>
+
+<ul>
+	<% @states.each do |state| %>
+	<li>
+		<b> Name: </b> <%= state.name %> <b> Capital: </b> <%= state.capital %>
+	</li>
+	<% end %>
+</ul>

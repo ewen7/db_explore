@@ -1,0 +1,13 @@
+<h1> <%= @products.first.category %> </h1>
+
+<%= form_tag inventory_by_category_path, method: :get do %>
+	<%= text_field_tag :category %>
+<% end %>
+
+<ul>
+	<% @products.each do |prod| %>
+	<li>
+		<b> Name: </b> <%= prod.name %> <b> Price: </b> <%= prod.price %>
+	</li>
+	<% end %>
+</ul>
